@@ -1,9 +1,9 @@
 #include <iostream>
-#include <string.h>
+#include <string>
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include <string>
+#include <glm/mat4x2.hpp>
 
 const GLint WIDTH = 800;
 const GLint HEIGHT = 600;
