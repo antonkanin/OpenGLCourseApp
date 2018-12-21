@@ -97,6 +97,25 @@ bool Window::getShouldClose()
 	return glfwWindowShouldClose(mainWindow);
 }
 
+bool* Window::getKeys()
+{
+	return keys;
+}
+
+GLfloat Window::getXChange()
+{
+	GLfloat theChange = xChange;
+	xChange = 0.0f;
+	return theChange;
+}
+
+GLfloat Window::getYChange()
+{
+	GLfloat theChange = yChange;
+	yChange = 0.0f;
+	return theChange;
+}
+
 void Window::swapBuffers()
 {
 	glfwSwapBuffers(mainWindow);

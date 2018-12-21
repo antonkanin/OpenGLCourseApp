@@ -18,6 +18,11 @@ public:
 
 	bool getShouldClose();
 
+	bool* getKeys();
+
+	GLfloat getXChange();
+	GLfloat getYChange();
+
 	void swapBuffers();
 
 	~Window();
