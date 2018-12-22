@@ -62,6 +62,7 @@ void Mesh::ClearMesh()
 		glDeleteVertexArrays(1, &VAO);
 		VAO = 0;
 	}
+	indexCount = 0;
 }
 
 Mesh::~Mesh()
