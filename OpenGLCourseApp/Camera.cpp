@@ -1,4 +1,6 @@
 #include "Camera.h"
+#include <ostream>
+#include <iostream>
 
 Camera::Camera()
 {
@@ -63,6 +65,7 @@ void Camera::mouseControl(GLfloat xChange, GLfloat yChange)
 
 glm::mat4 Camera::calculateViewMatrix()
 {
+	std::cout << position.x << " " << position.y << " " << position.z << std::endl;
 	return glm::lookAt(position, position + front, up);
 }
 

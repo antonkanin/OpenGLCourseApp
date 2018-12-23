@@ -141,12 +141,12 @@ void Window::handleKeys(GLFWwindow* window, int key, int code, int action, int m
 		if (action == GLFW_PRESS)
 		{
 			theWindow->keys[key] = true;
-			std::cout << "Pressed: " << key << std::endl;
+			//std::cout << "Pressed: " << key << std::endl;
 		}
 		else if (action == GLFW_RELEASE)
 		{
 			theWindow->keys[key] = false;
-			std::cout << "Released: " << key << std::endl;
+			//std::cout << "Released: " << key << std::endl;
 		}
 	}
 }
@@ -168,7 +168,7 @@ void Window::handleMouse(GLFWwindow* window, double xPos, double yPos)
 	theWindow->lastX = xPos;
 	theWindow->lastY = yPos;
 
-	printf("x:%.6f, y:%.6f\n", theWindow->xChange, theWindow->yChange);
+	// printf("x:%.6f, y:%.6f\n", theWindow->xChange, theWindow->yChange);
 }
 
 Window::~Window()
