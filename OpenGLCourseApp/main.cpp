@@ -1,3 +1,5 @@
+#define STB_IMAGE_IMPLEMENTATION
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -39,10 +41,10 @@ void CreateObjects()
 
 	GLfloat vertices[] =
 	{
-		-1.0f, -1.0f, 0.0f,		// bottom left
-		0.0f, -1.0f, 1.0f,
-		1.0f, -1.0f, 0.0f,		// bottom right
-		0.0f, 1.0f, 0.0f		// top
+		-1.0f, -1.0f, 0.0f, 0.0f, 0.0f,		// bottom left
+		0.0f, -1.0f, 1.0f, 0.0f, 0.0f,
+		1.0f, -1.0f, 0.0f, 0.0f, 0.0f,		// bottom right
+		0.0f, 1.0f, 0.0f, 0.0f, 0.0f		// top
 	};
 
 	Mesh* obj1 = new Mesh();
